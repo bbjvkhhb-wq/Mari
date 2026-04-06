@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ghost | قوست</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+
+        <!-- تعريف السيرفر -->
+        <div class="intro-section">
+          <div class="intro-box">
+              <div class="server-logo">GL</div>
+                  <h1>Ghost | قوست</h1>
+                      <p>حياكم الله في سيرفر قوست المتخصص في الرول بلاي. انضموا الان وعيشوا التجربة كاملة!</p>
+                          <a href="https://discord.gg/gl-1" class="discord-btn" target="_blank">انضم للديسكورد</a>
+                            </div>
+                            </div>
+
+                            <!-- زر القائمة الجانبية -->
+                            <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+                            <div class="sidebar hidden" id="sidebar">
+                              <div class="sidebar-logo">GL</div>
+                                <div class="menu-buttons">
+                                    <button onclick="openSection('rules')">القوانين</button>
+                                        <button onclick="openSection('join-live')">انضم + البثوث</button>
+                                            <button onclick="openSection('jobs')">تقديم الوظائف</button>
+                                                <button onclick="openSection('activation')">التفعيل</button>
+                                                    <button onclick="openSection('add-rules')">إضافة قوانين</button>
+                                                      </div>
+                                                      </div>
+
+                                                      <div class="content">
+                                                        <!-- القوانين -->
+                                                          <div id="rules" class="section-box hidden">
+                                                              <h2>القوانين</h2>
+                                                                  <div class="accordion" id="accordionRules"></div>
+                                                                    </div>
+
+                                                                      <!-- انضم + البثوث -->
+                                                                        <div id="join-live" class="section-box hidden text-center">
+                                                                            <h2>انضم + شاهد أفضل البثوث</h2>
+                                                                                <div class="hero">
+                                                                                      <div class="hero-bg">GL</div>
+                                                                                            <p>حياكم الله في سيرفر قوست المتخصص في الرول بلاي</p>
+                                                                                                  <a href="https://discord.gg/gl-1" class="discord-btn" target="_blank">انضم للديسكورد</a>
+                                                                                                      </div>
+
+                                                                                                          <div class="live">
+                                                                                                                <h3>🎥 شاهد أفضل البثوث المباشرة</h3>
+                                                                                                                      <p>تابع أفضل البثوث لأحداث مميزة في مختلف المجالات</p>
+                                                                                                                            <div class="stream-grid" id="streamGridJoin">
+                                                                                                                                    <a href="https://twitch.tv/klhmk" target="_blank">مشاهدة البث</a>
+                                                                                                                                          </div>
+                                                                                                                                              </div>
+                                                                                                                                                </div>
+
+                                                                                                                                                  <!-- تقديم الوظائف -->
+                                                                                                                                                    <div id="jobs" class="section-box hidden text-center">
+                                                                                                                                                        <h2>تقديم الوظائف</h2>
+                                                                                                                                                            <div class="job-box" id="jobBox">
+                                                                                                                                                                  <a href="https://discord.gg/gl-1" class="discord-btn" target="_blank">تقديم وظيفة 1</a>
+                                                                                                                                                                        <a href="https://discord.gg/gl-1" class="discord-btn" target="_blank">تقديم وظيفة 2</a>
+                                                                                                                                                                            </div>
+                                                                                                                                                                              </div>
+
+                                                                                                                                                                                <!-- التفعيل -->
+                                                                                                                                                                                  <div id="activation" class="section-box hidden text-center">
+                                                                                                                                                                                      <h2>التفعيل</h2>
+                                                                                                                                                                                          <div id="activationBox">
+                                                                                                                                                                                                <a href="https://discord.gg/gl-1" class="discord-btn" target="_blank">تفعيل 1</a>
+                                                                                                                                                                                                      <a href="https://discord.gg/gl-1" class="discord-btn" target="_blank">تفعيل 2</a>
+                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                            </div>
+
+                                                                                                                                                                                                              <!-- إضافة قوانين (مالك فقط) -->
+                                                                                                                                                                                                                <div id="add-rules" class="section-box hidden text-center">
+                                                                                                                                                                                                                    <h2>إضافة قوانين جديدة</h2>
+                                                                                                                                                                                                                        <input type="text" id="newRuleTitle" placeholder="اسم القانون">
+                                                                                                                                                                                                                            <textarea id="newRuleContent" placeholder="محتوى القانون"></textarea>
+                                                                                                                                                                                                                                <button onclick="addRule()">إضافة القانون</button>
+                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                  <script src="script.js"></script>
+                                                                                                                                                                                                                                  </body>
+                                                                                                                                                                                                                                  </html>
