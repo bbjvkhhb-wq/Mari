@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>بوت البرودكاست</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="landing-container">
+
+          <div class="landing-content">
+
+            <h1 class="display-4 fw-bold text-white mb-4">بوت البرودكاست</h1>
+
+            <p class="lead text-white mb-5">أرسل رسائل جماعية لأعضاء سيرفرات الديسكورد بسهولة</p>
+
+            <% if (!user) { %>
+
+              <a href="/login" class="btn btn-primary btn-lg px-5 py-3 fw-bold">
+
+                <i class="fab fa-discord me-2"></i> تسجيل الدخول بواسطة ديسكورد
+
+              </a>
+
+            <% } else { %>
+
+              <a href="/dashboard" class="btn btn-primary btn-lg px-5 py-3 fw-bold me-3">
+
+                <i class="fas fa-tachometer-alt me-2"></i> لوحة التحكم
+
+              </a>
+
+              <a href="/logout" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+
+                <i class="fas fa-sign-out-alt me-2"></i> تسجيل الخروج
+
+              </a>
+
+            <% } %>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
